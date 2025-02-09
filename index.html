@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Recommender</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h class="Tushar">Tushar's End-Term Project</h>
+  <h1>Movie Recommender</h1>
+  <div class="controls">
+    <div class="control-group">
+      <label for="genre">Choose a Genre:</label>
+      <select id="genre">
+        <option value="">-- Select Genre --</option>
+        <option value="28">Action</option>
+        <option value="12">Adventure</option>
+        <option value="16">Animation</option>
+        <option value="35">Comedy</option>
+        <option value="80">Crime</option>
+        <option value="18">Drama</option>
+        <option value="10751">Family</option>
+        <option value="14">Fantasy</option>
+        <option value="27">Horror</option>
+        <option value="10402">Music</option>
+        <option value="9648">Mystery</option>
+        <option value="10749">Romance</option>
+        <option value="878">Sci-Fi</option>
+        <option value="53">Thriller</option>
+      </select>
+    </div>
+
+    <div class="control-group" id="actor-group" style="display: none;">
+      <label for="actor">Search for an Actor (Optional):</label>
+      <input type="text" id="actor" placeholder="Type actor's name..." autocomplete="off">
+      <div id="actor-suggestions" class="suggestions"></div>
+    </div>
+
+    <button id="recommend">Get Recommendations</button>
+  </div>
+
+  <div id="movies" class="grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
